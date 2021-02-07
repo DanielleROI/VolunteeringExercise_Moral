@@ -1,69 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css">
-    <script src="script.js" defer></script>    
-    <script src="communityevents.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
-    
-    
-    <header>
-      <nav class="navigation">
-           <li>
-              <a class="site-name" href="index.html"><b>Full</b>Filling</a>
-          </li>   
-        
-             <ul class="menu-list">
-          <li>
-            <a href="communityevents.html">Community events</a>
-          </li>
-          <li>
-            <a href="groupactivities.html">Group activities</a>
-          </li>
-          <li>
-            <a href="contactus.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </head>  
-  <body>
-    
-    
-      <h1 id="start"></h1>
-        
-     <div class="text">
-       <p class="title">Talk to us!</p>
-     </div>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    
-<div class="login-box">
-  <form>
-    <div class="user-box">
-      <input type="text" name="" required="">
-      <label>My name</label>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <div class="topnav" id="myTopnav">
+      <a class="site-name" href="index.html"><b>Full</b>Filling</a>
+      <a href="communityevents.html">Community events</a>
+      <a href="groupactivities.html">Group activities</a>
+      <a href="contactus.html">Contact Us</a>
+      <a class="icon" onclick="burgerBar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <div class="user-box">
-      <input type="password" name="" required="">
-      <label>Email</label>
+  </head>
+  <body>
+    <h1 id="start"></h1>
+
+    <div class="text">
+      <p class="title">Talk to us!</p>
     </div>
+
+    <div class="login-box">
+      <form>
         <div class="user-box">
-      <input type="password" name="" required="">
-      <label>Phone</label>
-    </div>
+          <input type="text" name="" required="" />
+          <label>My name</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="" />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="" />
+          <label>Phone</label>
+        </div>
         <div class="freetext">
-      <textarea id="subject" name="subject"  rows="8" cols="42" placeholder="Type your message here..."></textarea>
-         <div class="submit">
-       <input type="submit" value="Send">
-    </div>  
-    </div> 
-  </form>
-</div>
-  
-    
+          <textarea
+            id="subject"
+            name="subject"
+            rows="8"
+            cols="42"
+            placeholder="Type your message here..."
+          ></textarea>
+          <div class="submit">
+            <input type="submit" value="Send" />
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
-

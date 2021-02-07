@@ -1,50 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css">
-    <script src="script.js" defer></script>    
-    <script src="communityevents.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
-    
-    
-    <header>
-      <nav class="navigation">
-           <li>
-              <a class="site-name" href="index.html"><b>Full</b>Filling</a>
-          </li>   
-        
-             <ul class="menu-list">
-          <li>
-            <a href="communityevents.html">Community events</a>
-          </li>
-          <li>
-            <a href="groupactivities.html">Group activities</a>
-          </li>
-          <li>
-            <a href="contactus.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </head>  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <div class="topnav" id="myTopnav">
+      <a class="site-name" href="index.html"><b>Full</b>Filling</a>
+      <a href="communityevents.html">Community events</a>
+      <a href="groupactivities.html">Group activities</a>
+      <a href="contactus.html">Contact Us</a>
+      <a class="icon" onclick="burgerBar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </head>
   <body>
-    
-          <h1 id="start"></h1>
-        
-     <div class="text">
-       <p class="title">Community events</p>
-     </div>
-      <div id="intro">There are activities that run throughout the week and there are one-offs. We try to touch the entire population - the elderly, children, people with disabilities, those who get into trouble and especially anyone who asks.   <br><br><strong>You can register for a weekly / monthly event, continuously or one-time.</strong></div>
+    <h1 id="start"></h1>
 
+    <div class="text">
+      <p class="title">Community events</p>
+    </div>
+    <div id="intro">
+      There are activities that run throughout the week and there are one-offs.
+      We try to touch the entire population - the elderly, children, people with
+      disabilities, those who get into trouble and especially anyone who asks.
+      <br /><br /><strong
+        >You can register for a weekly / monthly event, continuously or
+        one-time.</strong
+      >
+    </div>
 
+    <div class="container">
+      <input type="radio" id="weeklyevents" name="color" />
+      <label for="weeklyevents">Weekly events</label>
+      <input type="radio" id="monthlyevents" name="color" />
+      <label for="monthlyevents">Monthly events</label>
+      <input type="radio" id="specialevents" name="color" />
+      <label for="specialevents">Special events</label>
+      <input type="radio" id="reset" name="color" />
+      <label for="reset">RESET</label>
 
+      <div class="tile weeklyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fattractive-caucasian-woman-is-cooking-healthy-salad-beautiful-mulatto-woman-is-looking-her-dressed-silky-nightgown-modern-designed-kitchen.jpg?v=1612014869331"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fattractive-caucasian-woman-is-cooking-healthy-salad-beautiful-mulatto-woman-is-looking-her-dressed-silky-nightgown-modern-designed-kitchen.jpg?v=1612014869331"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Cooking Together </b>11/11/2020 &nbsp;&nbsp; <br />
+          Dark Kitchen TLV <br />
+          <br />Cooking and baking in a shared kitchen, social experience,
+          getting to know the volunteer community. Distribution of food to the
+          needy.
+        </div>
+      </div>
 
+      <div class="tile monthlyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fclassmates-sitting-learning-desk.jpg?v=1612710580204"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fclassmates-sitting-learning-desk.jpg?v=1612710580204"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b>Exam preparation</b> 17/01/2021 &nbsp;&nbsp; <br />
+          Nationwide <br />
+          <br />Group classes in English, mathematics. Reducing social
+          disparities by creating equal opportunities for children and youth.
+        </div>
+      </div>
 
-    
-    
+      <div class="tile weeklyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fhappy-diverse-people-enjoying-in-the-park.jpg?v=1612020890810"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fhappy-diverse-people-enjoying-in-the-park.jpg?v=1612020890810"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Spending Time Together </b> 11/01/2021 &nbsp;&nbsp; <br />
+          Ganei Yehoshua Park <br />
+          <br />Social Consolidation Activity and entertainment activity,
+          connecting the volunteer audience between a group of children or the
+          elderly.
+        </div>
+      </div>
+
+      <div class="tile specialevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2F3958_F6DE7C64-7929-CBED-8505-77F85408C16A.jpg?v=1612711171092"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2F3958_F6DE7C64-7929-CBED-8505-77F85408C16A.jpg?v=1612711171092"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b>Passover Seder</b> 28/03/21 &nbsp;&nbsp; <br />
+          Arca, Namal Tel Aviv <br />
+          <br />A common Passover Seder for the elderly and Holocaust survivors,
+          distribution of kosher food and singing and dancing activities.
+        </div>
+      </div>
+
+      <div class="tile weeklyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fgroup-volunteers-taking-care-together-donations%20(1).jpg?v=1612020875681"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fgroup-volunteers-taking-care-together-donations%20(1).jpg?v=1612020875681"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Donating groceries </b> 12/01/2021 &nbsp;&nbsp; <br />
+          Shufersal Ness Ziona <br />
+          <br />Gathering groceries, packaging, delivery and everything you need
+          to make sure the fridge is full.
+        </div>
+      </div>
+
+      <div class="tile monthlyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fmale-mime-with-hand-gun-gesture-female-mime-holding-rose-standing-back-back.jpg?v=1612710569110"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fmale-mime-with-hand-gun-gesture-female-mime-holding-rose-standing-back-back.jpg?v=1612710569110"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Classes for teenagers and children </b> 21/01/2021 &nbsp;&nbsp;
+          <br />
+          Nationwide <br />
+          <br />Social Consolidation Activity and entertainment activity,
+          connecting the volunteer audience between a group of children or the
+          elderly.
+        </div>
+      </div>
+
+      <div class="tile monthlyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fpainting-the-walls-pink.jpg?v=1612710536409"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fpainting-the-walls-pink.jpg?v=1612710536409"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b>Renovation commando unit</b> <br />15/01/2021 &nbsp;&nbsp; <br />
+          Nationwide <br />
+          <br />Take ruined apartments of the elderly and Holocaust survivors
+          and renovate them.
+        </div>
+      </div>
+
+      <div class="tile specialevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Ffront-view-hanukkah-candle-holder-concept.jpg?v=1612711149617"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Ffront-view-hanukkah-candle-holder-concept.jpg?v=1612711149617"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      <div class="tile weeklyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fpositive-mother-daughter-enjoying-dramatic-view.jpg?v=1612709957203"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fpositive-mother-daughter-enjoying-dramatic-view.jpg?v=1612709957203"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Sitting down for coffee </b> 13/01/2021 &nbsp;&nbsp; <br />
+          Nationwide <br />
+          <br />Loneliness can be terrible, especially during this time. Sitting
+          for coffee in small talk with the elderly.
+        </div>
+      </div>
+
+      <div class="tile specialevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Ffront-view-hanukkah-candle-holder-concept.jpg?v=1612711149617"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Flittle-kids-halloween-party.jpg?v=1612711185561"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Costume Party </b> 25/02/2021 &nbsp;&nbsp; <br />
+          Gan meir TLV <br />
+          <br />Purim party, full of attractions and activities, singers and
+          dancers, food stalls for children with cancer.
+        </div>
+      </div>
+
+      <div class="tile monthlyevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fcouple-training-together-home%20(1).jpg?v=1612710614212"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2Fcouple-training-together-home%20(1).jpg?v=1612710614212"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b>Social clubs for Holocaust survivors</b> 25/01/2021 &nbsp;&nbsp;
+          <br />
+          Nationwide <br />
+          <br />Delivering a session in areas such as music, cooking,
+          handicrafts, bingo and more, or delivering a lecture.
+        </div>
+      </div>
+
+      <div class="tile specialevents">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2FHTB1xxhclHwrBKNjSZPcq6xpapXaL.jpg?v=1612711301804"
+        >
+          <img
+            src="https://cdn.glitch.com/7e1f2830-7662-40a4-9941-5d73a9e0715e%2FHTB1xxhclHwrBKNjSZPcq6xpapXaL.jpg?v=1612711301804"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          <b> Water park </b> 25/02/2021 &nbsp;&nbsp; <br />
+          Gan meir TLV <br />
+          <br />Purim party, full of attractions and activities, singers and
+          dancers, food stalls for children with cancer.
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
