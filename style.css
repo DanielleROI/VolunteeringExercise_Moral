@@ -1,0 +1,617 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  /*   height: auto; */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: black;
+}
+
+/* NAVIGATION BAR*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 12vh;
+  min-width: 100%;
+  z-index: 10;
+  margin: 0 auto;
+  /*   margin-top: 3%; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin-right: 400px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 200;
+  margin: 0 10px;
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a {
+  position: relative;
+  z-index: 1;
+}
+nav ul li a:hover {
+  color: rgb(211, 211, 211);
+  font-size: 1.11rem;
+}
+
+#bigger-nav-font {
+  font-size: 1.5rem;
+}
+
+.site-name {
+  font-size: 300%;
+  margin-left: 30px;
+  color: white;
+  line-height: 80%;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1vw;
+  width: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
+
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.event {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#intro {
+  line-height: 1.6;
+  z-index: 100;
+  line-height: 24px;
+  color: white;
+  position: absolute;
+  text-align: left;
+  left: 20%;
+  font-weight: 200;
+  font-size: 18px;
+  right: 20%;
+  top: 30vh;
+}
+
+.title {
+  font-size: 48px;
+  position: absolute;
+  color: white;
+  left: 10%;
+  line-height: 1.3;
+  overflow: hidden;
+  font-weight: 600;
+  top: 18vh;
+}
+
+.title2 {
+  font-size: 48px;
+  position: absolute;
+  color: white;
+  left: 10%;
+  line-height: 1.3;
+  overflow: hidden;
+  font-weight: 600;
+  top: 14vh;
+}
+
+.txt {
+  line-height: 1.6;
+  z-index: 100;
+  line-height: 24px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  font-weight: 200;
+  font-size: 18px;
+  right: 20%;
+  top: 30vh;
+}
+
+/* Background container */
+.background {
+  position: relative;
+  width: 100%;
+/*   height: 110vh; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background2 {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background3 {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* Image background container */
+.bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.upcomingevent {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  width: 25%;
+  height: auto;
+}
+
+.btn button {
+  position: relative;
+  top: -120px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: Assistant;
+  background: rgba(0, 0, 0, 0.5);
+  height: 10vh;
+  width: 40vh;
+  border: none;
+}
+
+
+
+
+
+
+
+
+.btn a:link button {
+  text-decoration: none;
+}
+
+.btn a:hover button {
+  background: black;
+  cursor: pointer;
+}
+
+/* grid styles ------------------------------------ */
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    grid-gap: 1vw;
+    margin-top: 10%;
+
+
+  }
+
+  .figure1 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  .figure6 {
+    grid-column: span 2;
+  }
+  .figure7 {
+    grid-column: span 3;
+  }
+}
+
+.figure-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+figure {
+    margin:0;
+}
+
+
+.grid-volunteer {
+  display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1vw;
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+
+
+
+
+
+
+
+.btnarticle button {
+  position: relative;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: Assistant;
+  background: white;
+  height: 10vh;
+  border: none; 
+}
+
+
+button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+@media (min-width: 600px) {
+  .grid-volunteer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+.bgkid {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+
+
+
+.tell_grid{
+  position: absolute;
+  bottom: 5%;
+  display: grid;
+  margin: auto auto 4vw auto;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+
+
+@media (min-width: 600px) {
+  .tell_grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+
+
+.detail {
+ text-align: center;
+ color: white;
+
+
+}
+
+.detail p{
+  font-size: 16px;
+  text-align: center;
+  margin: 1vw;
+}
+
+.detail img{
+  border-radius: 10%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-box {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  border: 1px solid white;
+  color: white; 
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+input[type=submit] {
+  background-color: white;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+  font-family: Assistant;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  -ms-transform: translate(-50%, 50%);
+}
+
+input[type=submit]:hover {
+  background-color: #800000;
+  
+}
+
+
+
+
+
+/* 
+.navigation {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
